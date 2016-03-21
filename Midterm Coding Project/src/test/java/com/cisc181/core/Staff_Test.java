@@ -42,8 +42,7 @@ public class Staff_Test {
 	}	
 	
 	 
-	//Both of the exception cases are tested for and both throw exceptions but I don't 
-	//know how to get the test cases to verify that. I tried using code from past examples.
+	
 	@Test(expected = PersonException.class)
 	public void PhoneExpectionTest() throws Exception {
 		Date date = new Date(100,1,1);

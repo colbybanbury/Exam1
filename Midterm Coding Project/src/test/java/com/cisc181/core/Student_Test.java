@@ -84,83 +84,135 @@ public class Student_Test {
 	}
 
 	@Test
-	public void averagetest() {
-		double student1sum = 0;
-		for (int i= 0; i <6;i++){
-			student1sum += enrollList.get(i).getGrade();
-		}
-		double student1average =student1sum / 6;
+	public void GPAtest() {
 		
-		double student2sum = 0;
-		for (int i= 6; i <12;i++){
-			student2sum += enrollList.get(i).getGrade();
+		double student1sum = 0;
+		double totalCredits =0;
+		for (int i= 0; i <6;i+=3){
+			totalCredits += courseList.get(0).getGradePoints()+courseList.get(1).getGradePoints()+courseList.get(2).getGradePoints();
+			student1sum += ((.04*enrollList.get(i).getGrade()) * courseList.get(0).getGradePoints());
+			student1sum += ((.04*enrollList.get(i+1).getGrade()) * courseList.get(1).getGradePoints());
+			student1sum += ((.04*enrollList.get(i+2).getGrade()) * courseList.get(2).getGradePoints());
 		}
-		double student2average =student2sum / 6;
+		double student1average =student1sum /totalCredits ;
+		 
+		double student2sum = 0;
+		totalCredits =0;
+		for (int i= 6; i <12;i+=3){
+			totalCredits += courseList.get(0).getGradePoints()+courseList.get(1).getGradePoints()+courseList.get(2).getGradePoints();
+			student2sum += ((.04*enrollList.get(i).getGrade()) * courseList.get(0).getGradePoints());
+			student2sum += ((.04*enrollList.get(i+1).getGrade()) * courseList.get(1).getGradePoints());
+			student2sum += ((.04*enrollList.get(i+2).getGrade()) * courseList.get(2).getGradePoints());
+		}
+		double student2average =student2sum / totalCredits;
 		
 		
 		double student3sum = 0;
-		for (int i= 12; i <18;i++){
-			student3sum += enrollList.get(i).getGrade();
+		totalCredits =0;
+		for (int i= 12; i <18;i+=3){
+			totalCredits += courseList.get(0).getGradePoints()+courseList.get(1).getGradePoints()+courseList.get(2).getGradePoints();
+			student3sum += ((.04*enrollList.get(i).getGrade()) * courseList.get(0).getGradePoints());
+			student3sum += ((.04*enrollList.get(i+1).getGrade()) * courseList.get(1).getGradePoints());
+			student3sum += ((.04*enrollList.get(i+2).getGrade()) * courseList.get(2).getGradePoints());
 		}
-		double student3average =student3sum / 6;
+		double student3average =student3sum / totalCredits;
 		
 		double student4sum = 0;
-		for (int i= 18; i <24;i++){
-			student4sum += enrollList.get(i).getGrade();
+		totalCredits =0;
+		for (int i= 18; i <24;i+=3){
+			totalCredits += courseList.get(0).getGradePoints()+courseList.get(1).getGradePoints()+courseList.get(2).getGradePoints();
+			student4sum += ((.04*enrollList.get(i).getGrade()) * courseList.get(0).getGradePoints());
+			student4sum += ((.04*enrollList.get(i+1).getGrade()) * courseList.get(1).getGradePoints());
+			student4sum += ((.04*enrollList.get(i+2).getGrade()) * courseList.get(2).getGradePoints());
 		}
-		double student4average =student4sum / 6;
+		double student4average =student4sum / totalCredits;
 		
 		double student5sum = 0;
-		for (int i= 24; i <30;i++){
-			student5sum += enrollList.get(i).getGrade();
+		totalCredits =0;
+		for (int i= 24; i <30;i+=3){
+			totalCredits += courseList.get(0).getGradePoints()+courseList.get(1).getGradePoints()+courseList.get(2).getGradePoints();
+			student5sum += ((.04*enrollList.get(i).getGrade()) * courseList.get(0).getGradePoints());
+			student5sum += ((.04*enrollList.get(i+1).getGrade()) * courseList.get(1).getGradePoints());
+			student5sum += ((.04*enrollList.get(i+2).getGrade()) * courseList.get(2).getGradePoints());
 		}
-		double student5average =student5sum / 6;
+		double student5average =student5sum / totalCredits;
 		
 		double student6sum = 0;
-		for (int i= 30; i <36;i++){
-			student6sum += enrollList.get(i).getGrade();
+		totalCredits =0;
+		for (int i= 30; i <36;i+=3){
+			totalCredits += courseList.get(0).getGradePoints()+courseList.get(1).getGradePoints()+courseList.get(2).getGradePoints();
+			student6sum += ((.04*enrollList.get(i).getGrade()) * courseList.get(0).getGradePoints());
+			student6sum += ((.04*enrollList.get(i+1).getGrade()) * courseList.get(1).getGradePoints());
+			student6sum += ((.04*enrollList.get(i+2).getGrade()) * courseList.get(2).getGradePoints());
 		}
-		double student6average =student6sum / 6;
+		double student6average =student6sum / totalCredits;
 		
 		double student7sum = 0;
-		for (int i= 36; i <42;i++){
-			student7sum += enrollList.get(i).getGrade();
+		totalCredits =0;
+		for (int i= 36; i <42;i+=3){
+			totalCredits += courseList.get(0).getGradePoints()+courseList.get(1).getGradePoints()+courseList.get(2).getGradePoints();
+			student7sum += ((.04*enrollList.get(i).getGrade()) * courseList.get(0).getGradePoints());
+			student7sum += ((.04*enrollList.get(i+1).getGrade()) * courseList.get(1).getGradePoints());
+			student7sum += ((.04*enrollList.get(i+2).getGrade()) * courseList.get(2).getGradePoints());
 		}
-		double student7average =student7sum / 6;
+		double student7average =student7sum / totalCredits;
 		
 		
 		double student8sum = 0;
-		for (int i= 42; i <48;i++){
-			student8sum += enrollList.get(i).getGrade();
+		totalCredits =0;
+		for (int i= 42; i <48;i+=3){
+			totalCredits += courseList.get(0).getGradePoints()+courseList.get(1).getGradePoints()+courseList.get(2).getGradePoints();
+			student8sum += ((.04*enrollList.get(i).getGrade()) * courseList.get(0).getGradePoints());
+			student8sum += ((.04*enrollList.get(i+1).getGrade()) * courseList.get(1).getGradePoints());
+			student8sum += ((.04*enrollList.get(i+2).getGrade()) * courseList.get(2).getGradePoints());
 		}
-		double student8average =student8sum / 6;
+		double student8average =student8sum / totalCredits;
 	
 		
 		double student9sum = 0;
-		for (int i= 48; i <54;i++){
-			student9sum += enrollList.get(i).getGrade();
+		totalCredits =0;
+		for (int i= 48; i <54;i+=3){
+			totalCredits += courseList.get(0).getGradePoints()+courseList.get(1).getGradePoints()+courseList.get(2).getGradePoints();
+			student9sum += ((.04*enrollList.get(i).getGrade()) * courseList.get(0).getGradePoints());
+			student9sum += ((.04*enrollList.get(i+1).getGrade()) * courseList.get(1).getGradePoints());
+			student9sum += ((.04*enrollList.get(i+2).getGrade()) * courseList.get(2).getGradePoints());
 		}
-		double student9average =student9sum / 6;
+		double student9average =student9sum / totalCredits;
 		
 		
 		double student10sum = 0;
-		for (int i= 54; i <60;i++){
-			student10sum += enrollList.get(i).getGrade();
+		totalCredits =0;
+		for (int i= 54; i <60;i+=3){
+			totalCredits += courseList.get(0).getGradePoints()+courseList.get(1).getGradePoints()+courseList.get(2).getGradePoints();
+			student10sum += ((.04*enrollList.get(i).getGrade()) * courseList.get(0).getGradePoints());
+			student10sum += ((.04*enrollList.get(i+1).getGrade()) * courseList.get(1).getGradePoints());
+			student10sum += ((.04*enrollList.get(i+2).getGrade()) * courseList.get(2).getGradePoints());
 		}
-		double student10average =student10sum / 6;
+		double student10average =student10sum / totalCredits;
 		
+		System.out.println(student1average);
+		System.out.println(student2average);
+		System.out.println(student3average);
+		System.out.println(student4average);
+		System.out.println(student5average);
+		System.out.println(student6average);
+		System.out.println(student7average);
+		System.out.println(student8average);
+		System.out.println(student9average);
+		System.out.println(student10average);
 		
-		assertEquals(student1average, 97.5,.01);
-		assertEquals(student2average, 91.5,.01);
-		assertEquals(student3average, 85.5,.01);
-		assertEquals(student4average, 79.5,.01);
-		assertEquals(student5average, 73.5,.01);
-		assertEquals(student6average, 67.5,.01);
-		assertEquals(student7average, 61.5,.01);
-		assertEquals(student8average, 55.5,.01);
-		assertEquals(student9average, 49.5,.01);
-		assertEquals(student10average, 43.5,.01);
+		assertEquals(student1average, 3.9,.01);
+		assertEquals(student2average, 3.66,.01);
+		assertEquals(student3average, 3.42,.01);
+		assertEquals(student4average, 3.179,.01);
+		assertEquals(student5average, 2.94,.01);
+		assertEquals(student6average, 2.700,.01);
+		assertEquals(student7average, 2.46,.01);
+		assertEquals(student8average, 2.22,.01);
+		assertEquals(student9average, 1.98,.01);
+		assertEquals(student10average, 1.74,.01);
 	}
+
 	
 	@Test
 	public void courseAveragetest() {
